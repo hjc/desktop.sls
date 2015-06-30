@@ -2,7 +2,7 @@ base:
   '*':
     - termutils
     - devutils
-    - apps
+    - apps.all
     - apt-sources
     - git
     - git.default-editors.vim
