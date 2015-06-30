@@ -1,5 +1,6 @@
 include: 
   - devutils/node
+  - devutils/salt-latest
 
 devpkgs:
   pkg.installed:
