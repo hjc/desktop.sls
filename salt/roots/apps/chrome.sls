@@ -1,6 +1,7 @@
 include:
   - apt-sources
 
+# if you don't install these first, you can hit dependency issues with Chrome
 chrome-support-pkgs:
   pkg.installed:
     - pkgs:
@@ -9,6 +10,7 @@ chrome-support-pkgs:
       - chromium
       - libappindicator1
 
+# Package is provided by a PPA in apt-sources
 chrome-pkg:
   pkg.installed:
     - pkgs:
@@ -20,6 +22,5 @@ chrome-pkg:
 set-chrome-as-default-browser:
   cmd.wait:
     - name: update-alternatives --set x-www-browser /usr/bin/google-chrome-stable
-#    - unless: "update-alternatives --query x-www-browser | grep 'Value: /usr/bin/google-chrome-stable'"
     - watch:
       - pkg: chrome-pkg
