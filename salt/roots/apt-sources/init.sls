@@ -23,6 +23,7 @@ ppa-pkgs:
 
 sublime-text-ppa:
   pkgrepo.managed:
+    # @TODO: Pick a better PPA for this.
     - name: deb http://ppa.launchpad.net/webupd8team/sublime-text-3/ubuntu vivid main
     # Using PPA's on Debian from within Salt is not supported, but this should
     # work fine in an Ubuntu system
@@ -41,3 +42,11 @@ webupd8-key:
     - name: "apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886"
     - unless: "apt-key list | grep EEA14886"
     - order: 1
+
+# this will automatically call apt get update when a new .list file is added, but you
+# should use pkgrepo.managed for that instead
+# apt-get-update:
+#   cmd.wait:
+#     - name: apt-get update
+#     - watch:
+#      - file: /etc/apt/sources.list.d/*

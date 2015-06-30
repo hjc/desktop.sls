@@ -9,6 +9,7 @@ saltstack-ppa-key:
 
 saltstack-ppa:
   pkgrepo.managed:
+    # @TODO: This PPA should be more versatile
     - name: deb http://debian.saltstack.com/debian stretch-saltstack main
     - keyserver: keyserver.ubuntu.com
     - order: 2
