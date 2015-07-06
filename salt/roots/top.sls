@@ -10,3 +10,4 @@ base:
     - apt-sources
     - git
     - git.default-editors.vim
+    - sysutils.firmware.iwlwifi
