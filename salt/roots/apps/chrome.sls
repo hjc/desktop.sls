@@ -11,17 +11,15 @@ chrome-support-pkgs:
       - libappindicator1
 
 # Package is provided by a PPA in core.pkg-sources
-chrome-pkg:
+google-chrome-stable:
   # Chrome self-updates, so no need for pkg.latest here
   pkg.installed:
-    - pkgs:
-      - google-chrome-stable
     - require:
-      - pkgrepo: google-chrome-source
       - pkg: chrome-support-pkgs
 
 set-chrome-as-default-browser:
   cmd.wait:
-    - name: update-alternatives --set x-www-browser /usr/bin/google-chrome-stable
+    - name: update-alternatives --set x-www-browser `which google-chrome-stable`
+    - unless: 'update-alternatives --query x-www-browser | grep "Value: `which google-chrome-stable`"'
     - watch:
-      - pkg: chrome-pkg
+      - pkg: google-chrome-stable
