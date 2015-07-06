@@ -15,6 +15,8 @@ webupd8-sublime-ppa:
     - require:
       - pkg: ppa-pkgs
       - cmd: webupd8-key
+    - require-in:
+      - pkg: sublime-text
 
 
 webupd8-java-ppa:
