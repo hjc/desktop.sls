@@ -1,0 +1,2 @@
+include:
+  - core.systools.xdotool
