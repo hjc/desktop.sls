@@ -1,6 +1,6 @@
 {% if grains['os'] == 'Debian' %}
 include:
-  - apt-sources/debian-nonfree
+  - core.pkg-sources.sources.debian-nonfree
 {% endif %}
 
 firmware-iwlwifi:

@@ -1,5 +1,5 @@
 include:
-  - apt-sources/google-chrome
+  - core.pkg-sources.sources.google-chrome
 
 # if you don't install these first, you can hit dependency issues with Chrome
 chrome-support-pkgs:
@@ -10,7 +10,7 @@ chrome-support-pkgs:
       - chromium
       - libappindicator1
 
-# Package is provided by a PPA in apt-sources
+# Package is provided by a PPA in core.pkg-sources
 chrome-pkg:
   # Chrome self-updates, so no need for pkg.latest here
   pkg.installed:

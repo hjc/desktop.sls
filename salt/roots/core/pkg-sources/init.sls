@@ -1,3 +1,6 @@
+include:
+  - core.pkg-sources.config-by-distro
+
 /etc/apt/sources.list.d:
   file.directory: 
     - name: /etc/apt/sources.list.d

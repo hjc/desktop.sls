@@ -1,6 +1,6 @@
 include:
-  - apt-sources
-  - apt-sources/webupd8
+  - core.pkg-sources.sources
+  - core.pkg-sources.sources
 
 # who loves properitary licenses!?
 accept-oracle-license:

@@ -1,12 +1,10 @@
-include:
-  - apt-sources
-
 webupd8-sublime-ppa:
   pkgrepo.managed:
     # @TODO: Pick a better PPA for this.
     {% if grains['os'] == 'Debian' %}
     # Using PPA's on Debian is wonky, so we lie about it with ubuntu vivid
     - name: deb http://ppa.launchpad.net/webupd8team/sublime-text-3/ubuntu vivid main
+    - file: /etc/apt/sources.list.d/sublime.list
     {% else %}
     - ppa: webupd8team/sublime-text-3
     {% endif %}
@@ -25,6 +23,7 @@ webupd8-java-ppa:
     {% if grains['os'] == 'Debian' %}
     # Using PPA's on Debian is wonky, so we lie about it with ubuntu vivid
     - name: deb http://ppa.launchpad.net/webupd8team/java/ubuntu vivid main
+    - file: /etc/apt/sources.list.d/oracle-java.list
     {% else %}
     - ppa: webupd8team/java
     {% endif %}

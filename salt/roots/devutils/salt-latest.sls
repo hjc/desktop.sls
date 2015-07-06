@@ -1,5 +1,5 @@
 include:
-  - apt-sources/saltstack
+  - core.pkg-sources.sources.saltstack
 
 saltstack-latest:
   pkg.latest:

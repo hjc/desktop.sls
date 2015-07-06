@@ -1,6 +1,6 @@
 include:
   - apps
-  - apt-sources/webupd8
+  - core.pkg-sources.sources.webupd8
 
 sublime-text:
   pkg.latest:

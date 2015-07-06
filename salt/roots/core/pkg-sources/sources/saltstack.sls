@@ -1,6 +1,3 @@
-include:
-  - apt-sources
-
 saltstack-ppa-key:
   cmd.run:
     - name: apt-key adv --keyserver keyserver.ubuntu.com --recv-keys "B09E40B0F2AE6AB9"
@@ -12,6 +9,7 @@ saltstack-ppa:
     # @TODO: This PPA should be more versatile
     {% if grains['os'] == 'Debian' %}
     - name: deb http://debian.saltstack.com/debian {{ grains['lsb_distrib_codename'] }}-saltstack main
+    - file: /etc/apt/sources.list.d/saltstack.list
     {% elif grains['os'] == 'Ubuntu' %}
     - name: ppa: saltstack/salt
     {% endif %}
