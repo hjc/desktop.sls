@@ -3,7 +3,7 @@
 include:
   - core.pass
 {% if default_de == 'cinnamon' %}
-  - apps.desktop-environments.cinnamon
+  - core.desktop-environments.cinnamon
 {% elif default_de == 'gnome-shell' %}
-  - apps.desktop-environments.gnome-shell
+  - core.desktop-environments.gnome-shell
 {% endif %}
