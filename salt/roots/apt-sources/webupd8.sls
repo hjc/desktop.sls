@@ -1,7 +1,7 @@
 include:
   - apt-sources
 
-webupd8-ppa:
+webupd8-sublime-ppa:
   pkgrepo.managed:
     # @TODO: Pick a better PPA for this.
     {% if grains['os'] == 'Debian' %}
@@ -18,6 +18,23 @@ webupd8-ppa:
       - pkg: ppa-pkgs
       - cmd: webupd8-key
 
+
+webupd8-java-ppa:
+  pkgrepo.managed:
+    # @TODO: Pick a better PPA for this.
+    {% if grains['os'] == 'Debian' %}
+    # Using PPA's on Debian is wonky, so we lie about it with ubuntu vivid
+    - name: deb http://ppa.launchpad.net/webupd8team/java/ubuntu vivid main
+    {% else %}
+    - ppa: webupd8team/java
+    - keyserver: keyserver.ubuntu.com
+    - order: 2
+    - enabled: True
+    - keyid: EEA14886
+    {% endif %}
+    - require:
+      - pkg: ppa-pkgs
+      - cmd: webupd8-key
 
 webupd8-key:
   cmd.run:

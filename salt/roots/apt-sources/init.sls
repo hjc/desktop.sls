@@ -9,6 +9,7 @@ sources-dir:
 ppa-pkgs:
   pkg.installed:
     - pkgs:
+      - debconf-utils
       - python-pycurl
       - python-apt
       - python-software-properties

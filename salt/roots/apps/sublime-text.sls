@@ -7,4 +7,4 @@ sublime-text:
     - pkgs:
       - sublime-text-installer
     - require:
-      - pkgrepo: webupd8-ppa
+      - pkgrepo: webupd8-sublime-ppa
