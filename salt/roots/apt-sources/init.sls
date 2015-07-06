@@ -1,4 +1,4 @@
-sources-dir:
+/etc/apt/sources.list.d:
   file.directory: 
     - name: /etc/apt/sources.list.d
     - user: root
