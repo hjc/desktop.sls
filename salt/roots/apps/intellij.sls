@@ -1,7 +1,7 @@
 {% set intellij_unzipped_path = '/opt/idea-IU-141.1532.4' %}
 
 include:
-  - devutils/java/oracle-jdk
+  - devutils/java/determine-default
 
 idea-source:
   archive.extracted:
