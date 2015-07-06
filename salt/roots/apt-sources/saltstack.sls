@@ -10,7 +10,11 @@ saltstack-ppa-key:
 saltstack-ppa:
   pkgrepo.managed:
     # @TODO: This PPA should be more versatile
-    - name: deb http://debian.saltstack.com/debian stretch-saltstack main
+    {% if grains['os'] == 'Debian' %}
+    - name: deb http://debian.saltstack.com/debian {{ grains['lsb_distrib_codename'] }}-saltstack main
+    {% elif grains['os'] == 'Ubuntu' %}
+    - name: ppa: saltstack/salt
+    {% endif %}
     - keyserver: keyserver.ubuntu.com
     - order: 2
     - enabled: True

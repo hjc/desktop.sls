@@ -9,11 +9,11 @@ webupd8-sublime-ppa:
     - name: deb http://ppa.launchpad.net/webupd8team/sublime-text-3/ubuntu vivid main
     {% else %}
     - ppa: webupd8team/sublime-text-3
+    {% endif %}
     - keyserver: keyserver.ubuntu.com
     - order: 2
     - enabled: True
     - keyid: EEA14886
-    {% endif %}
     - require:
       - pkg: ppa-pkgs
       - cmd: webupd8-key
@@ -27,11 +27,11 @@ webupd8-java-ppa:
     - name: deb http://ppa.launchpad.net/webupd8team/java/ubuntu vivid main
     {% else %}
     - ppa: webupd8team/java
+    {% endif %}
     - keyserver: keyserver.ubuntu.com
     - order: 2
     - enabled: True
     - keyid: EEA14886
-    {% endif %}
     - require:
       - pkg: ppa-pkgs
       - cmd: webupd8-key
