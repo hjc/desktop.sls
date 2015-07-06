@@ -11,6 +11,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - This Changelog.
 - System for determining the default selected DE based on pillar data and
 installing it.
+- Small system for adding support packages based on DE. Prototyped with
+Dropbox for now.
 
 ## [0.1.1] - 2015-04-06
 ### Added
