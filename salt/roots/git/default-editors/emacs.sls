@@ -1,4 +1,5 @@
 include:
+  - devutils
   - termutils
 
 git-emacs-default-editor:
@@ -9,3 +10,5 @@ git-emacs-default-editor:
     - user: {{ salt['pillar.get']('user-config:username', 'root') }}
     - require:
       - pkg: termpkgs
+      # require git
+      - pkg: devpkgs

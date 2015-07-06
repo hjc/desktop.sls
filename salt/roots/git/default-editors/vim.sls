@@ -1,4 +1,5 @@
 include:
+  - devutils
   - termutils
 
 git-vim-default-editor:
@@ -9,3 +10,5 @@ git-vim-default-editor:
     - user: {{ salt['pillar.get']('user-config:username', 'root') }}
     - require:
       - pkg: termpkgs
+      # require git
+      - pkg: devpkgs
