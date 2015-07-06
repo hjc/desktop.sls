@@ -3,7 +3,7 @@ include:
 
 # if you don't install these first, you can hit dependency issues with Chrome
 chrome-support-pkgs:
-  pkg.installed:
+  pkg.latest:
     - pkgs:
       - pepperflashplugin-nonfree
       - chromedriver
@@ -12,6 +12,7 @@ chrome-support-pkgs:
 
 # Package is provided by a PPA in apt-sources
 chrome-pkg:
+  # Chrome self-updates, so no need for pkg.latest here
   pkg.installed:
     - pkgs:
       - google-chrome-stable

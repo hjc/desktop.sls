@@ -1,5 +1,5 @@
 fish:
-  pkg.installed
+  pkg.latest
 
 add-fish-to-/etc/shells:
   cmd.wait:

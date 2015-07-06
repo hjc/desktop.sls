@@ -1,2 +1,2 @@
 nodejs:
-  pkg.installed
+  pkg.latest

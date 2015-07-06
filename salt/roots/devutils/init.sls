@@ -1,5 +1,5 @@
 devpkgs:
-  pkg.installed:
+  pkg.latest:
     - pkgs:
       - libcurl3
       - curl

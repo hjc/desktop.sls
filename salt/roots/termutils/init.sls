@@ -1,5 +1,5 @@
 termpkgs:
-  pkg.installed:
+  pkg.latest:
     - pkgs:
       - vim
       - terminator

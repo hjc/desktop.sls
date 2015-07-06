@@ -2,7 +2,7 @@ include:
   - apps
 
 sublime-text:
-  pkg.installed:
+  pkg.latest:
     - pkgs:
       - sublime-text-installer
     - require:
