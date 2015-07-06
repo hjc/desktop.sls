@@ -4,6 +4,8 @@ base:
     - termutils.all
     - termutils.shells.default-shells.fish 
     - devutils.all
+    - devutils.vagrant.plugins.salt
+    - devutils.vagrant.plugins.bindfs
     - apps.all
     - apt-sources
     - git
