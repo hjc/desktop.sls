@@ -1,0 +1,11 @@
+# Unix-style newlines and files end in a new line.
+# Also the generic indent styles
+[*]
+end_of_line = LF
+insert_final_newline = true
+indent_style = space
+indent_size = 4
+
+[*.sls]
+indent_style = space
+indent_size = 2
