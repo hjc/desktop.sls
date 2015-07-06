@@ -1,4 +1,5 @@
 include:
-  - apps/chrome
-  - apps/sublime-text
-  - apps/intellij
+  - apps.chrome
+  - apps.intellij
+  - apps.keepass2
+  - apps.sublime-text

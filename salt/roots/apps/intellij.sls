@@ -1,7 +1,10 @@
 {% set intellij_unzipped_path = '/opt/idea-IU-141.1532.4' %}
 
 include:
-  - devutils/java/determine-default
+  # while we need to install Java, we don't need to wait on Java to be instaled
+  # before extracting IntelliJ, it will all get done by the time the user is
+  # ready to use the system.
+  - devutils.java.determine-default
 
 idea-source:
   archive.extracted:
