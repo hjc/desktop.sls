@@ -9,6 +9,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Pillar data to configure apps in general.
 - Pillar data to configure desktop environments, in the apps pillar data.
 - This Changelog.
+- System for determining the default selected DE based on pillar data and
+installing it.
 
 ## [0.1.1] - 2015-04-06
 ### Added
