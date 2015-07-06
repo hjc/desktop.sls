@@ -1,5 +1,5 @@
 include:
-  - apt-sources
+  - apt-sources/google-chrome
 
 # if you don't install these first, you can hit dependency issues with Chrome
 chrome-support-pkgs:
@@ -17,7 +17,7 @@ chrome-pkg:
     - pkgs:
       - google-chrome-stable
     - require:
-      - file: google-chrome-source
+      - pkgrepo: google-chrome-source
       - pkg: chrome-support-pkgs
 
 set-chrome-as-default-browser:
