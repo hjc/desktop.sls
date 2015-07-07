@@ -1,3 +1,5 @@
+# @TODO: Use me somewhere
+
 ##
 # This file sets keybindings for KeePass2's AutoType for Cinnamon 2.6+/
 #
@@ -15,17 +17,21 @@ include:
 {# This will work for Debian, but not Arch or RedHat #}
 {% set keepass_path = "`dpkg -L keepass2 | grep -e 'KeePass.exe$'`" %}
 
+{# This will be our actual shortcut. In it <Primary> maps to ctrl #}
+{% set autotype_shortcut = salt.pillar.get('apps:keepass:autotype-shortcut') %}
+
+{% if autotype_shortcut %}
 set-dconf-full-path:
   cmd.run:
     # We cannot use gsettings here due to a schema issue.
     - name: |
         cat << EOF | dconf load /org/cinnamon/desktop/keybindings/custom-keybindings/
         [org.cinnamon.desktop.keybindings.custom-keybinding.keepass2.autotype]
-        binding=['<Primary><Alt>a']
+        binding=['{{ autotype_shortcut }}']
         command='mono {{ keepass_path }} --autotype'
         name='keepass2.autotype'
         EOF
-    - unless: dconf dump /org/cinnamon/desktop/keybindings/custom-keybindings/org.cinnamon.desktop.keybindings.custom-keybinding.keepass2.autotype/ | pcregrep -Me "[/].*\nbinding=\['<Primary><Alt>a'\].*\ncommand='mono {{ keepass_path }} --autotype'.*\nname='keepass2.autotype'"
+    - unless: dconf dump /org/cinnamon/desktop/keybindings/custom-keybindings/org.cinnamon.desktop.keybindings.custom-keybinding.keepass2.autotype/ | pcregrep -Me "[/].*\nbinding=\['{{ autotype_shortcut }}'\].*\ncommand='mono {{ keepass_path }} --autotype'.*\nname='keepass2.autotype'"
     # This is a finnicky command, if the user's default shell is something other
     # than Bash, it might not go well.
     - shell: /bin/bash
@@ -40,4 +46,4 @@ update-dconf-keybindings:
     - user: {{ salt['pillar.get']('user-config:username', 'root') }}
     - require:
       - cmd: set-dconf-full-path
-
+{% endif %}
