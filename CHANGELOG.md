@@ -13,6 +13,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 installing it.
 - Small system for adding support packages based on DE. Prototyped with
 Dropbox for now.
+- Support for setting the KeePass2 AutoType shortcut in Cinnamon 2.6+
+using dconf.
+- pcregrep is now a base package in systools.
 
 ## [0.1.1] - 2015-04-06
 ### Added

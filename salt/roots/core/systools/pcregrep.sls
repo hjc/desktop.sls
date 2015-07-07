@@ -1,0 +1,2 @@
+pcregrep:
+  pkg.installed
