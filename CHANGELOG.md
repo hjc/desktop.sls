@@ -20,6 +20,8 @@ using dconf.
 - Support for installing silversearcher-ag in devutils.
 - htop is now a core systool.
 - xclip is now a core systool.
+- gpointing-device-settings is now a supported sysutil firmware. It comes
+with a config file that works well for Thinkpads.
 
 ### Changed
 - Refactored sysmanagement into core.
