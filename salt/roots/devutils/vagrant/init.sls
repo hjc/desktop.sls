@@ -1,5 +1,5 @@
 include:
-  - sysmanagement.user-in-sudo
+  - core.sysmanagement.user-in-sudo
   - devutils.{{ salt['pillar.get']('devutils:vagrant:provider', 'virtualbox') }}
   {% for provider in salt['pillar.get']('devutils:vagrant:alternative-providers', []) %}
   - devutils.{{ provider }}

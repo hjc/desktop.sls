@@ -21,6 +21,9 @@ using dconf.
 - htop is now a core systool.
 - xclip is now a core systool.
 
+### Changed
+- Refactored sysmanagement into core.
+
 ## [0.1.1] - 2015-04-06
 ### Added
 - New systools module to the core module, it will install all tools we need
