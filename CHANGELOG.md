@@ -18,6 +18,8 @@ using dconf.
 - pcregrep is now a base package in systools.
 - Support for installing ack-grep in devutils.
 - Support for installing silversearcher-ag in devutils.
+- htop is now a core systool.
+- xclip is now a core systool.
 
 ## [0.1.1] - 2015-04-06
 ### Added

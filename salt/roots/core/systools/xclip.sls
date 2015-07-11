@@ -1,0 +1,2 @@
+xclip:
+  pkg.latest

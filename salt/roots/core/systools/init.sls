@@ -8,5 +8,7 @@
 ##
 include:
   # multiline grep can be clutch
+  - core.systools.htop
   - core.systools.pcregrep
+  - core.systools.xclip
   - core.systools.xdotool
