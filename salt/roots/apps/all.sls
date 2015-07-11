@@ -3,4 +3,5 @@ include:
   - apps.dropbox
   - apps.intellij
   - apps.keepass2
+  - apps.redshift
   - apps.sublime-text
