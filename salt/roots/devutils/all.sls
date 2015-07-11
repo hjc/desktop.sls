@@ -1,7 +1,8 @@
 include:
   - devutils
-  - devutils/node
-  - devutils/salt-latest
-  - devutils/vagrant
-  - devutils/nfs
-  - devutils/ssh
+  - devutils.nfs
+  - devutils.node
+  - devutils.salt-latest
+  - devutils.silversearcher
+  - devutils.ssh
+  - devutils.vagrant
