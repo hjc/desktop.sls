@@ -1,0 +1,2 @@
+ack-grep:
+  pkg.latest

@@ -16,6 +16,8 @@ Dropbox for now.
 - Support for setting the KeePass2 AutoType shortcut in Cinnamon 2.6+
 using dconf.
 - pcregrep is now a base package in systools.
+- Support for installing ack-grep in devutils.
+- Support for installing silversearcher-ag in devutils.
 
 ## [0.1.1] - 2015-04-06
 ### Added

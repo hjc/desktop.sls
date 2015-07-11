@@ -1,0 +1,2 @@
+silversearcher-ag:
+  pkg.latest
