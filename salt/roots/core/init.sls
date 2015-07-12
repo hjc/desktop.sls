@@ -6,8 +6,8 @@
 ##
 
 include:
-  - core.create-data-directory
   - core.desktop-environments
+  - core.kosher-data-directory
   - core.pkg-sources
   - core.systools
   - core.x11

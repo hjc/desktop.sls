@@ -21,10 +21,20 @@ via pillar data.
 - Added states to stop and restart the Redshift service, since it is a user
 service and not every might be familiar with that.
 - Added a new section to the apps pillar config specifically for Redshift.
+- Added a new package source to pkg-sources for nodesource. Has to use their
+install script though.
+- Added a state to explicitly reinstall the nodesource.
+- Added apt-transport-https to systools (core, required).
+- Add lsb-release as a core required systool.
+
+### Changed
+- Moved curl out of the devutils package and into core.systools.
 
 ### Fixed
 - The KeePass2 Shortcut that gets bound is now correct.
 - The gpointing-device-settings now syncs the proper conf file for a Thinkpad.
+- node devutil package now requires proper nodesource, so it should come updated
+with the latest (0.12).
 
 ## [0.2.0] - 2015-04-11
 ### Added

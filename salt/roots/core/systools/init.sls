@@ -7,8 +7,11 @@
 # tool.
 ##
 include:
-  # multiline grep can be clutch
+  - core.systools.apt-transport-https
+  - core.systools.curl
   - core.systools.htop
+  - core.systools.lsb-release
+  # multiline grep can be clutch
   - core.systools.pcregrep
   - core.systools.xclip
   - core.systools.xdotool

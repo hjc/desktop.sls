@@ -1,2 +1,6 @@
+include:
+  - core.pkg-sources.sources.nodesource
+
 nodejs:
-  pkg.latest
+  pkg.latest:
+    - refresh: True

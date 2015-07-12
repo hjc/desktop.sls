@@ -1,4 +1,4 @@
-create-data-directory:
+kosher-data-directory:
   file.directory:
     - name: /home/{{ salt.pillar.get('user-config:username', 'root') }}/{{ salt.pillar.get('kosher:data-directory', '.config/kosher') }}
     - makedirs: True
