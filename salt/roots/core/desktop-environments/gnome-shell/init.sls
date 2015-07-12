@@ -8,6 +8,9 @@ gnome:
 gnome-shell:
   pkg.latest
 
+gnome-tweak-tool:
+  pkg.latest
+
 # @TODO: Support multiple window managers?
 mutter:
   pkg.latest

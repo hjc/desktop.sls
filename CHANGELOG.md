@@ -26,6 +26,7 @@ install script though.
 - Added a state to explicitly reinstall the nodesource.
 - Added apt-transport-https to systools (core, required).
 - Add lsb-release as a core required systool.
+- Base Gnome state in core.desktop-environments now installs gnome-tweak-tool.
 
 ### Changed
 - Moved curl out of the devutils package and into core.systools.
