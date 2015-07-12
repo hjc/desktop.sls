@@ -17,6 +17,7 @@ Invoke with: `salt-call state.sls core.x11.restore-original-xorg-conf`.
 
 ### Fixed
 - The KeePass2 Shortcut that gets bound is now correct.
+- The gpointing-device-settings now syncs the proper conf file for a Thinkpad.
 
 ## [0.2.0] - 2015-04-11
 ### Added
