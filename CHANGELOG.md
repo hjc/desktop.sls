@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
+### Fixed
+- The KeePass2 Shortcut that gets bound is now correct.
 
 ## [0.2.0] - 2015-04-11
 ### Added
