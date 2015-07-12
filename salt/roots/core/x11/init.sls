@@ -1,5 +1,5 @@
 include:
-  - core.create-data-directory
+  - core.kosher-data-directory
 
 # on first run, backup user's original xorg.conf file
 create-x11-data-dir:
@@ -9,7 +9,7 @@ create-x11-data-dir:
     - group: {{ salt.pillar.get('user-config:username') }}
     - makedirs: True
     - require:
-      - file: create-data-directory
+      - file: kosher-data-directory
 
 backup-x11-conf:
   cmd.run:
