@@ -1,0 +1,13 @@
+[Unit]
+Description=Redshift Display Color Controller (GTK Unit)
+
+[Install]
+Alias=xflux.service
+RequiredBy=default.target
+
+[Service]
+Environment=DISPLAY=:0
+ExecStart=/usr/bin/redshift{% if salt.pillar.get('apps:redshift:use-redshift-gtk') -%}
+-gtk
+{%- endif %} -c /home/{{ salt.pillar.get('user-config:username', 'root') }}/.config/redshift.conf -m randr &
+Restart=always

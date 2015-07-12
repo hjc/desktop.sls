@@ -14,6 +14,13 @@ of the Kosher data directory).
 - Made core.x11 state backup your original `xorg.conf`, just in case.
 - Added a new auxiliary state for restoring your original `xorg.conf` to core.
 Invoke with: `salt-call state.sls core.x11.restore-original-xorg-conf`.
+- Redshift app now installs a user level service that auto-starts itself whenever
+you log in.
+- Redshift app now installs a config file to maintain itself. It is configured
+via pillar data.
+- Added states to stop and restart the Redshift service, since it is a user
+service and not every might be familiar with that.
+- Added a new section to the apps pillar config specifically for Redshift.
 
 ### Fixed
 - The KeePass2 Shortcut that gets bound is now correct.
