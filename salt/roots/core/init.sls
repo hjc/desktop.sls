@@ -6,6 +6,9 @@
 ##
 
 include:
+  - core.create-data-directory
   - core.desktop-environments
   - core.pkg-sources
   - core.systools
+  - core.x11
+

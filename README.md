@@ -1,4 +1,6 @@
-# Getting Started
+# Kosher
+
+## Getting Started
 
 First create a folder for your gits:
 

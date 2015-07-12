@@ -3,6 +3,18 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
+### Added
+- Renamed to Kosher.
+- Added a new required core state: create-data-directory. This makes a directory
+for Kosher to dump all backups or any other files that need saving for later.
+The default location for this is `.config/kosher`.
+- Added new pillar data for configuring Kosher internals (such as the location
+of the Kosher data directory).
+- Added new required core state: x11. It will handle all X11 configuration.
+- Made core.x11 state backup your original `xorg.conf`, just in case.
+- Added a new auxiliary state for restoring your original `xorg.conf` to core.
+Invoke with: `salt-call state.sls core.x11.restore-original-xorg-conf`.
+
 ### Fixed
 - The KeePass2 Shortcut that gets bound is now correct.
 
