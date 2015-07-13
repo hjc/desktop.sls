@@ -23,6 +23,7 @@ nodesource-install-script:
     - require:
       - file: nodesource-data-directory
 
+# @TODO: If we can ever swap this to pkrepo.managed, we can use key_url.
 nodesource-key:
   cmd.run:
     - name: "curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -"
