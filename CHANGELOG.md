@@ -27,6 +27,8 @@ install script though.
 - Added apt-transport-https to systools (core, required).
 - Add lsb-release as a core required systool.
 - Base Gnome state in core.desktop-environments now installs gnome-tweak-tool.
+- Support for installing pip in devutils. Enabled in all
+
 
 ### Changed
 - Moved curl out of the devutils package and into core.systools.
