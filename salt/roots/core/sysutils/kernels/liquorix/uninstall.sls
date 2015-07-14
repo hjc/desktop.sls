@@ -9,8 +9,8 @@ remove-liquorix-pkgs:
 {% else %}
       - linux-image-liquorix-686
       - linux-headers-liquorix-686
-      - linux-headers-4.1-2.dmz.1-liquorix-amd64
-      - linux-image-4.1-2.dmz.1-liquorix-amd64
+      - linux-headers-4.1-2.dmz.1-liquorix-686
+      - linux-image-4.1-2.dmz.1-liquorix-686
 {% endif %}
       - liquorix-keyring
       - liquorix-archive-keyring

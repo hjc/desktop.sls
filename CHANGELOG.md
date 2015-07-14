@@ -57,6 +57,9 @@ using dconf.
 - xclip is now a core systool.
 - gpointing-device-settings is now a supported sysutil firmware. It comes
 with a config file that works well for Thinkpads.
+- New support for configuring your desired Linux Kernel in the core module.
+See the core/default pillar for how to configure between stock, Liquorix,
+and Linux 4.0.
 - Support for adding and removing Liquorix.
 
 ### Changed
