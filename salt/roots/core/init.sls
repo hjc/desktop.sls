@@ -10,5 +10,6 @@ include:
   - core.kosher-data-directory
   - core.pkg-sources
   - core.systools
+  - core.sysutil
   - core.x11
 
