@@ -1,2 +1,3 @@
 include:
-  - termutils/shells/fish
+  - termutils.shells.fish
+  - termutils.apps.terminator

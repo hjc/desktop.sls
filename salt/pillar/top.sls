@@ -4,4 +4,5 @@ base:
     - core
     - devutils
     - packages
+    - termutils
     - user-config

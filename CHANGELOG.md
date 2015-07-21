@@ -34,10 +34,14 @@ and Linux 4.0.
 - Support for adding and removing Liquorix.
 - Hexchat is now an app.
 - nmap is now a core systool.
+- Terminator now supports configuring your config file via a symlink.
+- Fish is included in termutils.all now.
 
 
 ### Changed
 - Moved curl out of the devutils package and into core.systools.
+- Terminator is now it's own state and is not installed by default in termutils,
+it is in termutils.all though.
 
 ### Fixed
 - The KeePass2 Shortcut that gets bound is now correct.
