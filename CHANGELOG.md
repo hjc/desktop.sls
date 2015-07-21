@@ -36,6 +36,10 @@ and Linux 4.0.
 - nmap is now a core systool.
 - Terminator now supports configuring your config file via a symlink.
 - Fish is included in termutils.all now.
+- php is now available in devutils.
+- Added a configuration namepsace for php.
+- One new configuration option for php: default-webserver, determines if you
+shoud install nginx, Apache2, or no webserver to go alongside php.
 
 
 ### Changed

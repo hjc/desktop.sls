@@ -31,3 +31,12 @@ devutils:
   # :type: string
   ##
   default-jdk: oracle
+
+  php:
+    ##
+    # A default webserver to install, if any.
+    #
+    # :type: string|False
+    # :values: nginx|apache|False
+    ##
+    default-webserver: nginx
