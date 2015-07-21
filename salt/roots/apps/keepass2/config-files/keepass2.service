@@ -1,0 +1,9 @@
+[Unit]
+Description=KeePass2 Password Manager Auto-Start Utility.
+
+[Install]
+RequiredBy=default.target
+
+[Service]
+ExecStart=/usr/bin/mono /usr/lib/keepass2/KeePass.exe
+Restart=never

@@ -52,6 +52,13 @@ apps:
     # :exaple: autotype-shortcut: '<Primary><Alt>a'  # maps to ctrl-alt-a
     ##
     autotype-shortcut: '<Primary><Alt>a'
+    ##
+    # Should a user-level systemd unit be installed that automatically keeps
+    # keepass2 running and auto-starts it?
+    #
+    # :type: bool
+    ##
+    enable-autolaunch-service: True
   ##
   # Top level namespace for all configurations regarding the redshift package
   # and service.
