@@ -48,6 +48,7 @@ it is in termutils.all though.
 - The gpointing-device-settings now syncs the proper conf file for a Thinkpad.
 - node devutil package now requires proper nodesource, so it should come updated
 with the latest (0.12).
+- Core no longer errors out on importing sysutils.
 
 ## [0.2.0] - 2015-04-11
 ### Added
