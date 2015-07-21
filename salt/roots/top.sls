@@ -10,5 +10,6 @@ base:
     - apps.all
     - git
     - git.default-editors.vim
+    - sysutils.firmware.fprintd
     - sysutils.firmware.gpointing-device-settings
     - sysutils.firmware.iwlwifi
