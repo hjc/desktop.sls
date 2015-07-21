@@ -39,7 +39,14 @@ and Linux 4.0.
 - php is now available in devutils.
 - Added a configuration namepsace for php.
 - One new configuration option for php: default-webserver, determines if you
-shoud install nginx, Apache2, or no webserver to go alongside php.
+should install nginx, Apache2, or no webserver to go alongside php.
+- New category in core.sysutils for system fixes named: "fixes". It is included
+by default and configured through pillar data.
+- New kosher.sysutils.fixes namespace in pillar data.
+- New kosher.sysutils.fixes.enabled-fixes key in pillar data, takes a list of system fixes
+you want to turn on and configures them.
+- New fix for having choppy video and audio after resuming post-hibernation. Name
+is: core.sysutils.fixes.choppy-resume-after-hibernate.
 
 
 ### Changed

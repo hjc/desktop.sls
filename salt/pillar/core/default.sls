@@ -29,3 +29,22 @@ kosher:
   # :values: stock|liquorix|4.0
   ##
   kernel: stock
+
+  sysutils:
+    ##
+    # This contains configuration for various system fixes you want.
+    ##
+    fixes:
+      ##
+      # A list of enabled fixes for your system, as defined in core.sysutils.fixes.
+      #
+      # Specify them by their exact stte name, or use False to apply no fixes to
+      # your system.
+      #
+      # :type: list[string]|False
+      # :example: choppy-resume-after-hibernation
+      # :value-category: state-name
+      # :value-state-name-namespace: core.sysutils.fixes
+      ##
+      enabled-fixes:
+        - choppy-resume-after-hibernate
