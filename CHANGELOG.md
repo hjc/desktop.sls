@@ -32,6 +32,7 @@ install script though.
 See the core/default pillar for how to configure between stock, Liquorix,
 and Linux 4.0.
 - Support for adding and removing Liquorix.
+- Hexchat is now an app.
 
 
 ### Changed
