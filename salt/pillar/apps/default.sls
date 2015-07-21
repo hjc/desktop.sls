@@ -84,7 +84,7 @@ apps:
     ##
     # @TODO: This should really be 3000 by default. But get a better
     # config system first.
-    night-temperature: 2000
+    night-temperature: 3000
     ##
     # Should we show the screen transitioning between colors?
     #
