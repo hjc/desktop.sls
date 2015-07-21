@@ -1,5 +1,7 @@
 [Unit]
-Description=Redshift Display Color Controller (GTK Unit)
+Description=Redshift Display Color Controller {% if salt.pillar.get('apps:redshift:use-redshift-gtk') -%}
+(GTK Unit)
+{%- endif %}
 
 [Install]
 Alias=xflux.service

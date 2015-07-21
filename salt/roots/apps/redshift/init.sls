@@ -56,3 +56,11 @@ enable-redshift-user-service:
     - name: systemctl --user enable redshift.service
     - unless: systemctl --user --all | grep redshift | grep loaded
     - user: {{ salt['pillar.get']('user-config:username', 'root') }}
+
+restart-redshift-user-service:
+  cmd.wait:
+    - name: systemctl --user restart redshift.service
+    - user: {{ salt['pillar.get']('user-config:username', 'root') }}
+    - stateful: True
+    - watch:
+      - file: $HOME/.config/redshift.conf
