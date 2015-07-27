@@ -47,6 +47,10 @@ by default and configured through pillar data.
 you want to turn on and configures them.
 - New fix for having choppy video and audio after resuming post-hibernation. Name
 is: core.sysutils.fixes.choppy-resume-after-hibernate.
+- New package source states for Tiliado's packages (creator of Nuvola Player) in
+core.
+- New package state for Nuvola Player 3, which installs all services by default.
+- Included Nuvola Player 3 in apps.all.
 
 
 ### Changed
