@@ -64,6 +64,8 @@ it is in termutils.all though.
 - node devutil package now requires proper nodesource, so it should come updated
 with the latest (0.12).
 - Core no longer errors out on importing sysutils.
+- Fixed a big issue with how the fish shell was added to /etc/shells if it was not
+present (it overwrote /etc/shells and was an incorrect cmd.wait).
 
 ## [0.2.0] - 2015-04-11
 ### Added
