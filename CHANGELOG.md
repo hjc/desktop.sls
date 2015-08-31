@@ -51,6 +51,7 @@ is: core.sysutils.fixes.choppy-resume-after-hibernate.
 core.
 - New package state for Nuvola Player 3, which installs all services by default.
 - Included Nuvola Player 3 in apps.all.
+- Support for installing 0xdbe.
 
 
 ### Changed
