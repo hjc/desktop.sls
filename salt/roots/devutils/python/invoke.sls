@@ -1,0 +1,2 @@
+invoke:
+  pip.installed
