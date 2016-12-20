@@ -1,0 +1,2 @@
+pandoc:
+  pkg.latest
