@@ -1,0 +1,2 @@
+nmon:
+  pkg.latest
