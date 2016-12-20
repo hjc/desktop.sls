@@ -1,6 +1,6 @@
 redshift:
   pkg.latest:
-    - require-in:
+    - require_in:
       - redshift-gtk
 
 {% if salt.pillar.get('apps:redshift:use-redshift-gtk') %}
@@ -44,6 +44,19 @@ $HOME/.config/redshift.conf:
     - mode: 755
     - makedirs: True
     - template: jinja
+
+
+##
+# Configure geoclue
+##
+redshift-configure-geoclue:
+  file.append:
+    - name: /etc/geoclue/geoclue.conf
+    - text: |
+        [redshift]
+        allowed=true
+        system=false
+        users=
 
 ##
 # Turn the user level systemd unit on so it starts automatically.

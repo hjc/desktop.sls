@@ -12,8 +12,9 @@ chrome-support-pkgs:
 
 # Package is provided by a PPA in core.pkg-sources
 google-chrome-stable:
-  # Chrome self-updates, so no need for pkg.latest here
-  pkg.installed:
+  # even though Chrome is *pretty* good at self-updating, we just updated
+  # support packages, so we should update the main one too!
+  pkg.latest:
     - require:
       - pkg: chrome-support-pkgs
 
@@ -21,5 +22,8 @@ set-chrome-as-default-browser:
   cmd.wait:
     - name: update-alternatives --set x-www-browser `which google-chrome-stable`
     - unless: 'update-alternatives --query x-www-browser | grep "Value: `which google-chrome-stable`"'
+    # hardcode the shell in case the user uses some odd shell (e.g., fish, like
+    # me!)
+    - shell: /bin/sh
     - watch:
       - pkg: google-chrome-stable

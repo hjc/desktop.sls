@@ -1,4 +1,6 @@
 include:
+  - apps.0xdbe
+  - apps.banshee
   - apps.chrome
   - apps.dropbox
   - apps.hexchat

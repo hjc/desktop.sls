@@ -1,2 +1,2 @@
 hexchat:
-  pkg.installed
+  pkg.latest

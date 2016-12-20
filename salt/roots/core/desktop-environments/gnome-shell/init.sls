@@ -11,6 +11,9 @@ gnome-shell:
 gnome-tweak-tool:
   pkg.latest
 
+gnome-screensaver:
+  pkg.latest
+
 # @TODO: Support multiple window managers?
 mutter:
   pkg.latest

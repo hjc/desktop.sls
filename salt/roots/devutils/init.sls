@@ -3,4 +3,5 @@ devpkgs:
     - pkgs:
       - bindfs
       - gnupg-agent
+      - openvpn
       - {{ pillar['packages']['git'] }}
