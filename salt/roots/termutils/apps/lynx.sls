@@ -1,0 +1,2 @@
+lynx:
+  pkg.latest
