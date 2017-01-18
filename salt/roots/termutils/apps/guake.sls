@@ -1,0 +1,2 @@
+guake:
+  pkg.latest
